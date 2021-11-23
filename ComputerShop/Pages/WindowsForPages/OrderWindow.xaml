@@ -1,0 +1,96 @@
+﻿<Window
+    x:Class="ComputerShop.Pages.WindowsForPages.OrderWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ComputerShop.Pages.WindowsForPages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="OrderWindow"
+    Width="400"
+    Height="350"
+    Background="#FF110203"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel
+            x:Name="LeftSP"
+            Grid.Column="0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Orientation="Horizontal">
+
+            <StackPanel Margin="20" Orientation="Vertical">
+                <Label Content="Дата доставки:" Foreground="#717ed4" />
+                <Calendar
+                    x:Name="deliveryDateCN"
+                    Width="180"
+                    Height="180" />
+                <Button
+                    x:Name="AddBtn"
+                    Grid.Column="1"
+                    Width="100"
+                    Margin="10"
+                    VerticalAlignment="Bottom"
+                    Content="Добавить" Click="AddBtn_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button
+                    x:Name="CancelBtn"
+                    Grid.Column="1"
+                    Width="100"
+                    Margin="0"
+                    VerticalAlignment="Bottom"
+                    Content="Отменить" Click="CancelBtn_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Margin="20" Orientation="Vertical">
+                <Label Content="Цена:" Foreground="#717ed4" />
+                <TextBox
+                    x:Name="orderPriceTB"
+                    Width="100"
+                    Height="20" />
+                <Label Content="ID Сотрудник:" Foreground="#717ed4" />
+                <ComboBox
+                    x:Name="orderEmployeeIdCB"
+                    Width="100"
+                    Height="20" />
+                <Label Content="ID ПК:" Foreground="#717ed4" />
+                <ComboBox
+                    x:Name="orderPC_IdCB"
+                    Width="100"
+                    Height="20" SelectionChanged="orderPC_IdCB_SelectionChanged" />
+                <Label Content="ID Клиент:" Foreground="#717ed4" />
+                <ComboBox
+                    x:Name="orderClientIdCB"
+                    Width="100"
+                    Height="20" />
+                <Button
+                    x:Name="ClientBtn"
+                    Grid.Column="1"
+                    Width="100"
+                    FontSize="10"
+                    Margin="0,5,0,0"
+                    VerticalAlignment="Bottom"
+                    Background="Transparent"
+                    Foreground="#717ed4"
+                    BorderThickness="0"
+                    Content="Новый клиент..." Click="AddClientBtn_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

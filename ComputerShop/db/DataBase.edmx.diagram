@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6ac4f5f42d3648058056a8b7499fda8e" Name="Diagram1">
+        <EntityTypeShape EntityType="ComputerShopModel.Authentication" Width="1.5" PointX="10.5" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Client" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Cooler" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Corpus" Width="1.5" PointX="3" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Employee" Width="1.5" PointX="8.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Manufacturer" Width="1.5" PointX="0.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.MemoryType" Width="1.5" PointX="3.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Motherboard" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Order" Width="1.5" PointX="10.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.PC" Width="1.5" PointX="5.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.PowerModule" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Processor" Width="1.5" PointX="8" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.RAM" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.Role" Width="1.5" PointX="8.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.TypeVideoMemory" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputerShopModel.VideoCard" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="ComputerShopModel.FK_Authentication_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Authentication_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Order_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Cooler_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_Cooler" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_Corpus" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Order_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Motherboard_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PowerModule_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Processor_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_RAM_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_VideoCard_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Motherboard_MemoryType" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Processor_MemoryType" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_RAM_MemoryType" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_Motherboard" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_Order_PC" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_PowerModule" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_Processor" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_RAM" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_PC_VideoCard" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputerShopModel.FK_VideoCard_TypeVideoMemory" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

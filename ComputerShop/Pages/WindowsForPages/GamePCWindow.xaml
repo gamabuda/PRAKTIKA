@@ -1,0 +1,55 @@
+﻿<Window x:Class="ComputerShop.Pages.WindowsForPages.GamePCWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ComputerShop.Pages.WindowsForPages"
+        mc:Ignorable="d"
+        Title="GamePCWindow" Height="350" Width="400" Background="#FF110203">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="LeftSP" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label Content="Название:" Foreground="#717ed4"/>
+            <TextBox x:Name="namePC" Width="100" Height="20"/>
+            <Label Content="Модель:" Foreground="#717ed4"/>
+            <TextBox x:Name="modelPC" Width="100" Height="20"/>
+            <Label Content="Серия:" Foreground="#717ed4"/>
+            <TextBox x:Name="serialPC" Width="100" Height="20"/>
+            <Label Content="ID Матплаты:" Foreground="#717ed4"/>
+            <ComboBox x:Name="motherPC" Width="100" Height="20"/>
+            <Label Content="ID Процессор:" Foreground="#717ed4"/>
+            <ComboBox x:Name="procPC" Width="100" Height="20"/>
+        </StackPanel>
+
+        <StackPanel x:Name="RightSP" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label Content="ID RAM:" Foreground="#717ed4"/>
+            <ComboBox x:Name="ramPC" Width="100" Height="20"/>
+            <Label Content="ID Видеокарта:" Foreground="#717ed4"/>
+            <ComboBox x:Name="videocardPC" Width="100" Height="20"/>
+            <Label Content="ID Блокпитания:" Foreground="#717ed4"/>
+            <ComboBox x:Name="powerPC" Width="100" Height="20"/>
+            <Label Content="ID Куллер:" Foreground="#717ed4"/>
+            <ComboBox x:Name="coolerPC" Width="100" Height="20"/>
+            <Label Content="ID Корпус:" Foreground="#717ed4"/>
+            <ComboBox x:Name="corpusPC" Width="100" Height="20"/>
+        </StackPanel>
+
+        <Button x:Name="AddBtn" Grid.Column="0" Content="Add" VerticalAlignment="Bottom" Width="100" Margin="10" Click="AddBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="CancelBtn" Grid.Column="1" Content="Cancel" VerticalAlignment="Bottom" Width="100" Margin="10" Click="CancelBtn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
