@@ -81,8 +81,8 @@
                 VerticalAlignment="Top">
 
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
                 </Grid.RowDefinitions>
 
                 <StackPanel
@@ -216,15 +216,16 @@
 
                     <Button
                         x:Name="SignUpBtn"
-                        Visibility="Collapsed"
                         Width="80"
                         Height="25"
                         Margin="20,8"
                         Background="#FFECF2F3"
                         BorderBrush="Black"
+                        Click="SignUpBtn_Click"
                         Content="Sign Up"
                         Focusable="True"
-                        Foreground="Black" Click="SignUpBtn_Click">
+                        Foreground="Black"
+                        Visibility="Collapsed">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="10" />
